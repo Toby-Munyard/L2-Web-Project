@@ -1,0 +1,45 @@
+<!doctype html>
+
+<head>
+    <title>Glow</title>
+</head>
+<link rel="stylesheet" href="styles.css">
+
+<nav>
+    <a href="Index.html">Home</a>
+    <a href="products.html">Store</a>
+    <a href="contact.html">Checkout</a>
+</nav>
+
+<script>
+    var imgs = [
+        'images/hoodie1.png', 'images/hoodie2.png', 'images/hoodie3.png', 'images/hoodie4.png',
+    ];
+
+    var slideCounter = 1;
+
+    function change() {
+        document.getElementById('slider').src = imgs[slideCounter]
+        slideCounter++;
+
+
+        if (slideCounter >= 4) {
+            slideCounter = 0;
+        }
+    };
+
+</script>
+
+<body>
+    <section>
+        <div class="left">
+            <img id='slider' onclick="change()" src='images/hoodie1.png'>
+            <h1>Hoodies</h1>
+            <p>4 Colours!</p>
+        </div>
+        <div class="right">
+            <h1>Mugs</h1>
+            <p>4 Colours!</p>
+        </div>
+    </section>
+</body>

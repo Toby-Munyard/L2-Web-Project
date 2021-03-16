@@ -1,0 +1,16 @@
+html {
+    background-color: darkgray;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.left {
+    grid-column: 1/1;
+    grid-row: 1/1;
+}
+
+nav {
+    grid-column: 2/2;
+    grid-row: 2/2;
+}
