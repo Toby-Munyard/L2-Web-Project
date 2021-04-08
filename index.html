@@ -4,48 +4,89 @@
     <title>Glow</title>
 </head>
 <link rel="stylesheet" href="styles.css">
-    <script>
-        var imgs = [
-            'images/hoodie1.png', 'images/hoodie2.png', 'images/hoodie3.png', 'images/hoodie4.png',
-        ];
 
-        var slideCounter = 1;
-
-        function change() {
-            document.getElementById('slider').src = imgs[slideCounter]
-            slideCounter++;
-
-
-            if (slideCounter >= 4) {
-                slideCounter = 0;
-            }
-        };
-
-    </script>
 <body>
     <div class="main">
-<nav>
-    <a href="Index.html">Home</a>
-    <a href="products.html">Store</a>
-    <a href="contact.html">Checkout</a>
-</nav>
+        <nav>
+            <div class="leftNav">
+                <img class='logo' src='images/logo.png'>
+                <h2>Glow</h2>
+            </div>
+            <div class="navLinks">
+                <a href="Index.html">Home</a>
+                <a href="products.html">Store</a>
+                <a href="contact.html">Checkout</a>
+            </div>
+            <div class="navMedia">
+<!--
+                <a href="Index.html">Twitter</a>
+                <a href="products.html">FB</a>
+                <a href="contact.html">Checkout</a>
+-->
+                <img class='instagram' src='images/instagram.png'>
+                <img class='facebook' src='images/facebook.png'>
+                <img class='twitter' src='images/twitter.png'>
+                <img class='youtube' src='images/youtube.png'>
+            </div>
+        </nav>
 
 
-    
 
-    <section>
 
-        <div class="left">
-            <img id='slider' onclick="change()" src='images/hoodie1.png'>
-            <h1>Hoodies</h1>
-            <p>4 Colours!</p>
-        </div>
-        <div class="right">
-            <h1>Mugs</h1>
-            <p>4 Colours!</p>
-        </div>
+        <section>
 
-    </section>
+            <div class="left">
+                <script>
+    var imgs = [
+        'images/hoodie1.png', 'images/hoodie2.png', 'images/hoodie3.png', 'images/hoodie4.png',
+    ];
 
-    </div> 
+    var slideCounter = 1;
+
+    function change() {
+        document.getElementById('slider').src = imgs[slideCounter]
+        slideCounter++;
+
+
+        if (slideCounter >= 4) {
+            slideCounter = 0;
+        }
+    };
+            </script>
+                <img id='slider' onclick="change()" src='images/hoodie1.png'>
+                <h1>Hoodies</h1>
+                <p>4 Colours! Check out our products page!</p>
+            </div>
+            <div class="right">
+                <script>
+            
+    var imgs2 = [
+        'images/phone1.png', 'images/phone2.png', 'images/phone3.png', 'images/phone4.png',
+    ];
+
+    var slideCounter2 = 1;
+
+    function change() {
+        document.getElementById('slider2').src = imgs2[slideCounter2]
+        slideCounter2++;
+
+
+        if (slideCounter2 >= 4) {
+            slideCounter2 = 0;
+        }
+    };
+
+</script>
+                <img id='slider2' onclick="change()" src='images/phone1.png'>
+                <h1>Phone Cases</h1>
+                <p>4 Colours! Check out our products page!</p>
+            </div>
+            <div class="middle">
+                <h1>SALE TODAY!</h1>
+                <p>glow Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed velit dignissim sodales ut eu sem integer vitae justo. Lacus vel facilisis volutpat est velit. Nec ultrices dui sapien eget mi proin sed. Nisi scelerisque eu ultrices vitae auctor eu augue ut lectus. Vitae sapien pellentesque habitant morbi. Tristique senectus et netus et malesuada fames ac turpis egestas. Convallis aenean et tortor at risus viverra adipiscing. Volutpat ac tincidunt vitae semper. Sed augue lacus viverra vitae congue eu. Tortor at auctor urna nunc id cursus. Laoreet suspendisse interdum consectetur libero id faucibus nisl.glow Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed velit dignissim sodales ut eu sem integer vitae justo. Lacus vel facilisis volutpat est velit. Nec ultrices dui sapien eget mi proin sed. Nisi scelerisque eu ultrices vitae auctor eu augue ut lectus. Vitae sapien pellentesque habitant morbi. Tristique senectus et netus et malesuada fames ac turpis egestas. Convallis aenean et tortor at risus viverra adipiscing. Volutpat ac tincidunt vitae semper. Sed augue lacus viverra vitae congue eu. Tortor at auctor urna nunc id cursus. Laoreet suspendisse interdum consectetur libero id faucibus nisl.glow Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed velit dignissim sodales ut eu sem integer vitae justo. Lacus vel facilisis volutpat est velit. Nec ultrices dui sapien eget mi proin sed. Nisi scelerisque eu ultrices vitae auctor eu augue ut lectus. Vitae sapien pellentesque habitant morbi. Tristique senectus et netus et malesuada fames ac turpis egestas. Convallis aenean et tortor at risus viverra adipiscing. Volutpat ac tincidunt vitae semper. Sed augue lacus viverra vitae congue eu. Tortor at auctor urna nunc id cursus. Laoreet suspendisse interdum consectetur libero id faucibus nisl.</p>
+            </div>
+
+        </section>
+
+    </div>
 </body>
