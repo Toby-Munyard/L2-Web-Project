@@ -1,16 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
 html {
     background-color: darkgray;
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    font-family: 'Roboto Slab', serif;
 }
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 2.5fr 3fr 2.5fr;
+    grid-template-rows: auto auto;
+    grid-gap: 30px;
+}
+
 
 .left {
-    grid-column: 1/1;
-    grid-row: 1/1;
+    grid-column: 1/2;
+    background-color: pink;
+    text-align: center;
 }
 
-nav {
+.right {
+    grid-column: 3/3;
+    background-color: pink;
+    text-align: center;
+}
+
+
+.middle {
     grid-column: 2/2;
-    grid-row: 2/2;
+    grid-row: 1/1;
+    background-color: pink;
+/*    justify-self: center; */
+}
+
+
+
+nav {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr;
+
+    place-items: center;
+
+    grid-column: 1/4;
+    font-size: 48px;
+    text-align: center;
+    background-color: white;
+    text-decoration-color: black;
+}
+
+.navMedia {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+}
+
+.navMedia img {
+    width: 80%;
+    margin: 20px;
+}
+
+.facebook {
+    margin: 0px;
+}
+
+.leftNav {
+    display: flex;
+}
+
+.logo {
+    width: 50%;
+}
+
+nav a:hover {
+    color: black;
+    background-color: white;
+
+}
+
+section {
+    background-color: red;
+    grid-column: 1/4;
+    width: 100%;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.left img {
+    width: 100%;
+}
+
+.right img {
+    width: 100%;
+}
+
+h2 {
+    color: purple;
+    font-size: 48px;
+    margin: auto;
+    justify-self: left;
+}
+
+h1 {
+    color: purple;
+    justify-self: right;
+    text-align: center;
 }
