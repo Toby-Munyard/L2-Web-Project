@@ -2,8 +2,42 @@
 
 <head>
     <title>Glow</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        var imgs = [
+            'images/hoodie1.png', 'images/hoodie2.png', 'images/hoodie3.png', 'images/hoodie4.png',
+        ];
+
+        var slideCounter = 1;
+
+        function change() {
+            document.getElementById('slider').src = imgs[slideCounter]
+            slideCounter++;
+
+
+            if (slideCounter >= 4) {
+                slideCounter = 0;
+            }
+        };
+
+        var imgs2 = [
+            'images/phone1.png', 'images/phone2.png', 'images/phone3.png', 'images/phone4.png',
+        ];
+
+        var slideCounter2 = 1;
+
+        function change2() {
+            document.getElementById('slider2').src = imgs2[slideCounter2]
+            slideCounter2++;
+
+
+            if (slideCounter2 >= 4) {
+                slideCounter2 = 0;
+            }
+        };
+
+    </script>
 </head>
-<link rel="stylesheet" href="styles.css">
 
 <body>
     <div class="main">
@@ -18,7 +52,7 @@
                 <a href="contact.html">Checkout</a>
             </div>
             <div class="navMedia">
-<!--
+                <!--
                 <a href="Index.html">Twitter</a>
                 <a href="products.html">FB</a>
                 <a href="contact.html">Checkout</a>
@@ -36,48 +70,12 @@
         <section>
 
             <div class="left">
-                <script>
-    var imgs = [
-        'images/hoodie1.png', 'images/hoodie2.png', 'images/hoodie3.png', 'images/hoodie4.png',
-    ];
-
-    var slideCounter = 1;
-
-    function change() {
-        document.getElementById('slider').src = imgs[slideCounter]
-        slideCounter++;
-
-
-        if (slideCounter >= 4) {
-            slideCounter = 0;
-        }
-    };
-            </script>
                 <img id='slider' onclick="change()" src='images/hoodie1.png'>
                 <h1>Hoodies</h1>
                 <p>4 Colours! Check out our products page!</p>
             </div>
             <div class="right">
-                <script>
-            
-    var imgs2 = [
-        'images/phone1.png', 'images/phone2.png', 'images/phone3.png', 'images/phone4.png',
-    ];
-
-    var slideCounter2 = 1;
-
-    function change() {
-        document.getElementById('slider2').src = imgs2[slideCounter2]
-        slideCounter2++;
-
-
-        if (slideCounter2 >= 4) {
-            slideCounter2 = 0;
-        }
-    };
-
-</script>
-                <img id='slider2' onclick="change()" src='images/phone1.png'>
+                <img id='slider2' onclick="change2()" src='images/phone1.png'>
                 <h1>Phone Cases</h1>
                 <p>4 Colours! Check out our products page!</p>
             </div>
