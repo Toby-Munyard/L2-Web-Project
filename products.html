@@ -3,72 +3,81 @@
 <head>
     <title>Products</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function priceChanger(elem) {
+            var newPrice;
+            if (elem.id == 'small') {
+                newPrice = '$30';
+            }
+            if (elem.id == 'medium') {
+                newPrice = '$45';
+            }
+            if (elem.id == 'large') {
+                newPrice = '$60';
+            }
+            alert(elem.id)
+
+
+            var prices = document.getElementsByClassName('price');
+
+            for (i = 0; i < prices.legth; i++) {
+                prices[i].textContent = newPrice;
+            }
+        }
+
+    </script>
 </head>
 
 <nav>
     <div class="leftNav">
-                <img class='logo' src='images/logo.png'>
-                <h2>Glow</h2>
-            </div>
+        <img class='logo' src='images/logo.png'>
+        <h2>Glow</h2>
+    </div>
     <div class="navLinks">
-                <a href="Index.html">Home</a>
-                <a href="products.html">Store</a>
-                <a href="contact.html">Checkout</a>
-            </div>
-            <div class="navMedia">
-                <img class='instagram' src='images/instagram.png'>
-                <img class='facebook' src='images/facebook.png'>
-                <img class='twitter' src='images/twitter.png'>
-                <img class='youtube' src='images/youtube.png'>
-            </div>
+        <a href="Index.html">Home</a>
+        <a href="products.html">Store</a>
+        <a href="contact.html">Checkout</a>
+    </div>
+    <div class="navMedia">
+        <img class='instagram' src='images/instagram.png'>
+        <img class='facebook' src='images/facebook.png'>
+        <img class='twitter' src='images/twitter.png'>
+        <img class='youtube' src='images/youtube.png'>
+    </div>
 </nav>
+
 <body>
-    <section class="storesetup">
+    <div class="options">
+        <a href="#" id="small" onclick="priceChanger(this)">Small</a>
+        <a href="#" id="medium" onclick="priceChanger(this)">Medium</a>
+        <a href="#" id="large" onclick="priceChanger(this)">Large</a>
+    </div>
     <ul class="products">
-        <li>
-            <img src="images/hoodie1.png">
-            <h1>Hoodie (Pink)</h1>
-            <p1>$45</p1>
+        <li><img src="images/hoodie1.png">
+            <h1 class="price">$45</h1>
         </li>
-                <li>
-            <img src="images/hoodie2.png">
-            <h1>Hoodie (Yellow)</h1>
-            <p1>$45</p1>
+        <li><img src="images/hoodie2.png">
+            <h1 class="price">$45</h1>
         </li>
-                <li>
-            <img src="images/hoodie3.png">
-            <h1>Hoodie (Lime)</h1>
-            <p1>$45</p1>
+        <li><img src="images/hoodie3.png">
+            <h1 class="price">$45</h1>
         </li>
-                <li>
-            <img src="images/hoodie4.png">
-            <h1>Hoodie (Blue)</h1>
-            <p1>$45</p1>
+        <li><img src="images/hoodie4.png">
+            <h1 class="price">$45</h1>
         </li>
-                <li>
-            <img src="images/phone1.png">
-            <h1>Phone Case (White)</h1>
-            <p1>$20</p1>
+        <li><img src="images/phone1.png">
+            <h1 class="price">$20</h1>
         </li>
-                <li>
-            <img src="images/phone2.png">
-            <h1>Phone Case (Pink)</h1>
-            <p1>$20</p1>
+        <li><img src="images/phone2.png">
+            <h1 class="price">$20</h1>
         </li>
-                <li>
-            <img src="images/phone3.png">
-            <h1>Phone Case (Yellow)</h1>
-            <p1>$20</p1>
+        <li><img src="images/phone3.png">
+            <h1 class="price">$20</h1>
         </li>
-                <li>
-            <img src="images/phone4.png">
-            <h1>Phone Case (Tan)</h1>
-            <p1>$20</p1>
+        <li><img src="images/phone4.png">
+            <h1 class="price">$20</h1>
         </li>
-        
-        
-        
-        </ul>
-    </section>
+
+    </ul>
 
 </body>
