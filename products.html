@@ -15,12 +15,12 @@
             if (elem.id == 'large') {
                 newPrice = '$60';
             }
-            alert(elem.id)
+            alert('Changing prices to your size')
 
 
             var prices = document.getElementsByClassName('price');
 
-            for (i = 0; i < prices.legth; i++) {
+            for (i = 0; i < prices.length; i++) {
                 prices[i].textContent = newPrice;
             }
         }
@@ -28,7 +28,7 @@
     </script>
 </head>
 
-<nav>
+<nav> 
     <div class="leftNav">
         <img class='logo' src='images/logo.png'>
         <h2>Glow</h2>
@@ -36,7 +36,7 @@
     <div class="navLinks">
         <a href="Index.html">Home</a>
         <a href="products.html">Store</a>
-        <a href="contact.html">Checkout</a>
+        <a href="contact.html">History</a>
     </div>
     <div class="navMedia">
         <img class='instagram' src='images/instagram.png'>
@@ -48,13 +48,14 @@
 
 <body>
     <div class="options">
-        <a href="#" id="small" onclick="priceChanger(this)">Small</a>
+        <h1> Buying a hoodie? What's your size?</h1> 
+        <h1><a href="#" id="small" onclick="priceChanger(this)">Small</a>
         <a href="#" id="medium" onclick="priceChanger(this)">Medium</a>
-        <a href="#" id="large" onclick="priceChanger(this)">Large</a>
+        <a href="#" id="large" onclick="priceChanger(this)">Large</a></h1>
     </div>
     <ul class="products">
         <li><img src="images/hoodie1.png">
-            <h1 class="price">$45</h1>
+            <h1 class="price">$45</h1> 
         </li>
         <li><img src="images/hoodie2.png">
             <h1 class="price">$45</h1>
@@ -66,16 +67,16 @@
             <h1 class="price">$45</h1>
         </li>
         <li><img src="images/phone1.png">
-            <h1 class="price">$20</h1>
+            <h1>$20</h1>
         </li>
         <li><img src="images/phone2.png">
-            <h1 class="price">$20</h1>
+            <h1>$20</h1>
         </li>
         <li><img src="images/phone3.png">
-            <h1 class="price">$20</h1>
+            <h1>$20</h1>
         </li>
         <li><img src="images/phone4.png">
-            <h1 class="price">$20</h1>
+            <h1>$20</h1>
         </li>
 
     </ul>
