@@ -52,7 +52,6 @@ nav {
     text-decoration-color: black;
     border-radius: 8px;
     text-decoration: none;
-    text-underline-position: none;
 } /* surrouds all the nav divs */
 
 .navMedia {
@@ -135,6 +134,18 @@ section {
     grid-template-columns: 1fr 1fr 1fr;
     list-style: none;
 } /* products page imgs wrapped in this */
+
+.options {
+    text-decoration: none;
+}
+
+.options a:hover{
+    color: black;
+    background-color: dimgray;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 5px 10px;
+}
 
 ul li img {
     /*
